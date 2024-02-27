@@ -1,4 +1,5 @@
 import { FacebookFilled, InstagramFilled, MailOutlined, PhoneOutlined, TwitterSquareFilled, UserOutlined } from "@ant-design/icons"
+import { NavLink } from "react-router-dom"
 
 const AppHeader: React.FC = () => {
     return (
@@ -22,6 +23,28 @@ const AppHeader: React.FC = () => {
 
                     <button><UserOutlined /> My Account</button>
                 </div>
+            </div>
+            <div className="header seperator">
+                <div className="logo">Grocery</div>
+                <nav>
+                    <ul>
+                        <li>
+                            <NavLink to="/">Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/about'>About</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/shop'>Shop</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/faq'>FAQ</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/contact'>Contact</NavLink>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     )
